@@ -1,0 +1,117 @@
+
+
+.questions-page {
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #93b5e1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .question {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+
+    width: 80%;
+
+    border-radius: 1.3rem;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25);
+
+    max-width: 500px;
+    min-width: 350px;
+    width: 80%;
+
+    h3 {
+      font-size: 1.1rem;
+      width: 90%;
+      text-align: center;
+      word-break: keep-all;
+      font-weight: 500;
+      color: #576071;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 70%;
+
+      .option {
+        flex-shrink: 0;
+        border: 2px solid #848ccf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: color 0.4s ease, background-color 0.4s ease;
+        font-size: 0.92rem;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          &.selected,
+          &:hover {
+            background: #303f9f;
+          }
+          border: 2px solid #303f9f;
+          color: #303f9f;
+        }
+
+        &:nth-child(3),
+        &:nth-child(4) {
+          &.selected,
+          &:hover {
+            background: #be5683;
+          }
+          border: 2px solid #be5683;
+          color: #be5683;
+        }
+
+        &.selected,
+        &:hover {
+          color: white;
+        }
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        &:nth-child(1),
+        &:nth-child(4) {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 4rem;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: 3.2rem;
+          height: 3.2rem;
+          border-radius: 3.2rem;
+        }
+      }
+    }
+  }
+
+  .see-results {
+    max-width: 500px;
+    min-width: 350px;
+    width: 80%;
+
+    padding: 10px;
+    text-align: center;
+    background-color: #be5683;
+
+    border-radius: 4rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+}

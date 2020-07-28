@@ -1,0 +1,24 @@
+.start-page {
+  background-color: #93b5e1;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .go-button {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background-color: #be5683;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+}

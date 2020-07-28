@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "IBM";
+  box-sizing: border-box;
+}
